@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Universal CSS */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Reusable component variable declared */
+:root{
+    --color1: #4E47FF;
+    --color2: #252432;
+    --white: #FFFFFF;
+    --inter: "Inter", sans-serif;
+    --raleway: "Raleway", sans-serif;
+}
+
+/* Shared Styles */
+.btn{
+    font-family: var(--raleway);
+    padding: 18px 36px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: var(--color1);
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+}
+.block{
+    display: block;
+}
+.center{
+    margin: 0 auto;
+}
+
+/* Nav Styles */
+.header{
+    background-image: url(../images/Hero-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
+}
+nav{
+    width: 87.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+nav h3{
+    font-family: var(--inter);
+    font-weight: 900;
+    font-size: 34px;
+    padding: 50px 0;
+    color: var(--color1);
+}
+
+
+/* Banner styles */
+.banner{
+    width: 87.5%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-container{
+    margin: 150px 100px;
+}
+.banner-heading{
+    margin-bottom: 50px;
+}
+.banner-heading h1{
+    font-family: var(--raleway);
+    color: var(--color2);
+    font-size: 65px;
+    font-weight: bold;
+    text-align: center;
+}
