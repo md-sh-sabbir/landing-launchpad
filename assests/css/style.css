@@ -5,10 +5,13 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    background-color: #F5F8FF;
+}
 /* Reusable component variable declared */
+
 :root{
-    --color1: #4E47FF;
+    --purple: #4E47FF;
     --color2: #252432;
     --white: #FFFFFF;
     --inter: "Inter", sans-serif;
@@ -16,12 +19,13 @@
 }
 
 /* Shared Styles */
+
 .btn{
     font-family: var(--raleway);
     padding: 18px 36px;
     font-weight: bold;
     font-size: 16px;
-    background-color: var(--color1);
+    background-color: var(--purple);
     color: var(--white);
     border: none;
     border-radius: 10px;
@@ -34,6 +38,7 @@
 }
 
 /* Nav Styles */
+
 .header{
     background-image: url(../images/Hero-bg.png);
     background-size: cover;
@@ -52,13 +57,15 @@ nav h3{
     font-weight: 900;
     font-size: 34px;
     padding: 50px 0;
-    color: var(--color1);
+    color: var(--purple);
 }
 main{
-    background-color: #F5F8FF;
+    width: 85%;
+    margin: 0 auto;
 }
 
 /* Banner styles */
+
 .banner{
     width: 85%;
     margin: 0 auto;
@@ -81,9 +88,8 @@ main{
 }
 
 /* Action Area Styles */
+
 .actionArea{
-    width: 85%;
-    margin: 0 auto;
     margin-bottom: 150px;
 }
 .action-container{
@@ -109,4 +115,42 @@ main{
 .action-image img{
     width: 100%;
     border-radius: 48px;
+    box-shadow: 0 4px 4px 0 rgb(0, 0, 0, 0.25);
+}
+
+/* Productive Area styles */
+
+.productiveArea{
+    background-color: rgb(78, 71, 255,0.1);
+    text-align: center;
+    padding: 50px 100px;
+    border-radius: 24px;
+    margin-bottom: 150px;
+    box-shadow: 0 4px 4px 0 rgb(0, 0, 0, 0.25);
+}
+.productive-container .productive-heading{
+    font-family: var(--raleway);
+    color: var(--color2);
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.productive-content{
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.productive-InnerContent{
+    font-family: var(--inter);
+}
+.productive-InnerContent h1{
+    font-weight: bold;
+    font-size: 80px;
+    color: var(--purple);
+}
+.productive-InnerContent p{
+    font-size: 20px;
+    color: #000000;
+    opacity: 50%;
 }
