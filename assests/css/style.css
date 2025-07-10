@@ -38,10 +38,10 @@
     background-image: url(../images/Hero-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 nav{
-    width: 87.5%;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,11 +54,13 @@ nav h3{
     padding: 50px 0;
     color: var(--color1);
 }
-
+main{
+    background-color: #F5F8FF;
+}
 
 /* Banner styles */
 .banner{
-    width: 87.5%;
+    width: 85%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -76,4 +78,35 @@ nav h3{
     font-size: 65px;
     font-weight: bold;
     text-align: center;
+}
+
+/* Action Area Styles */
+.actionArea{
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+.action-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.action-content h4{
+    font-family: var(--raleway);
+    font-size: 42px;
+    font-weight: bold;
+    color: var(--color2);
+}
+.action-content p{
+    font-family: var(--raleway);
+    font-size: 24px;
+    line-height: 30px;
+    color: #252432;
+    opacity: 50%;
+    margin: 23px 0;
+}
+.action-image img{
+    width: 100%;
+    border-radius: 48px;
 }
