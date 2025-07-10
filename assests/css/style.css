@@ -30,6 +30,13 @@ body{
     border: none;
     border-radius: 10px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    transition: .4s;
+    cursor: pointer;
+}
+.btn:hover{
+    transform: scale(1.05);
+    font-size: 1.05em;
+    background-image: linear-gradient(to bottom right, var(--purple), rgb(111, 200, 230));
 }
 .block{
     display: block;
@@ -37,7 +44,9 @@ body{
 .center{
     margin: 0 auto;
 }
-
+.width-full{
+    width: 100%;
+}
 /* ===================================================================================== */
 
 /* Nav Styles */
@@ -192,6 +201,7 @@ main{
     border: 1px solid #F2EDED;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     transition: .4s;
+    cursor: pointer;
 }
 .feedback-content:hover{
     transform: scale(1.05);
@@ -223,9 +233,54 @@ main{
 .profile-content p{
     font-size: 14px;
     color: #757575b7;
+    font-weight: 500;
 }
 .profile-image img{
     border-radius: 50%;
 }
 
 /* ===================================================================================== */
+
+/* Get in touch section styles */
+
+.GetInTouchArea{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 150px;
+    padding: 70px 0;
+}
+.contact-heading h1{
+    font-family: var(--raleway);
+    font-weight: bold;
+    font-size: 97px;
+}
+input[type="email"], input[type="text"]{
+    font-family: var(--inter);
+    font-size: 20px;
+    width: 433px;
+    height: 30px;
+    padding: 20px 32px;
+    border-radius: 20px;
+    border: none;
+    background-color: #FFFFFF;
+    border: 0.5px solid #D6DDED;
+    margin: 10px 0 14px;
+}
+textarea{
+   font-family: var(--inter);
+   font-size: 20px; 
+   width: 433px;
+   padding: 20px 32px;
+   border-radius: 20px;
+   border: none;
+   background-color: #FFFFFF;
+   border: 0.5px solid #D6DDED;
+   margin: 10px 0 20px;
+   resize: none;
+}
+label{
+    font-family: var(--inter);
+    font-weight: 500;
+    font-size: 18px;
+}
