@@ -322,7 +322,8 @@ label{
 
 /* ===================================================================================== */
 
-/* Footer section area end */
+/* Footer section styles */
+
 .footer-secion{
     background-color: #FFFFFF;
     font-family: var(--inter);
@@ -371,3 +372,4 @@ label{
     color: var(--purple);
 }
 
+/* ===================================================================================== */
